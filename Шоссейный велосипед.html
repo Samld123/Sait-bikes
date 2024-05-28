@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шоссейный велосипед Cannondale S6 EVO HM DISC ULT</title>
+    <link rel="stylesheet" href="Шоссейный велосипед.css">
+</head>
+<body>
+    <header>
+        <h1>Шоссейный велосипед Cannondale S6 EVO HM DISC ULT</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="Сайт по продаже велосипедов.html" onclick="showTab('description')">Главная</a></li>
+                <li><a href="#" onclick="showTab('description')">Описание</a></li>
+                <li><a href="#" onclick="showTab('gallery')">Галерея</a></li>
+            </ul>
+        </nav>
+
+        <section id="description" class="tab-content">
+            <h2>Описание Велосипеда</h2>
+            <p>Велосипед для шоссейных гонок, созданный на базе рамы из высокомодульного карбонового волокна, поражающий безупречной передачей усилий в подъемах и контролируемым управлением на спусках. Целый арсенал технологичных решений, вооруживших SuperSix EVO, экономит вложенные в педалирование ватты, обманывает потоки встречного ветра и делает езду гладкой без потери эффективности. Самый легкий и самый быстрый Cannondale в командных цветах, версии с механической трансмиссией Shimano Ultegra. Легкие и мощные дисковые тормоза - гарантия большего контроля на горных серпантинах. Лучшие компоненты уменьшают вибрацию и повышают контроль. Будучи гонщиком с момента рождения, S6 EVO HM Disc ULT создан для подобных себе, а всех остальных сделает быстрее.</p>
+        </section>
+
+        <section id="gallery" class="tab-content">
+            <h2>Галерея Велосипеда</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="https://trial-sport.ru/images/catalog/c21_c11451m_supersix_evo_hm_rep_pd_2048905.jpg" alt="Велосипед 1" class="slide">
+                    <img src="https://trial-sport.ru/images/catalog/c21_c11451m_supersix_evo_hm_rep_3q_2048908.jpg" alt="Велосипед 2" class="slide">
+                    <img src="https://trial-sport.ru/images/catalog/c21_c11451m_supersix_evo_hm_rep_pd_2048905.jpg" alt="Велосипед 3" class="slide">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="Шоссейный велосипед.js"></script>
+</body>
+</html>

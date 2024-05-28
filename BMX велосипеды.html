@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMX WeThePeople BATTLESHIP - RSD</title>
+    <link rel="stylesheet" href="BMX.css">
+</head>
+<body>
+    <header>
+        <h1>BMX WeThePeople BATTLESHIP - RSD</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="Сайт по продаже велосипедов.html" onclick="showTab('description')">Главная</a></li>
+                <li><a href="#" onclick="showTab('description')">Описание</a></li>
+                <li><a href="#" onclick="showTab('gallery')">Галерея</a></li>
+            </ul>
+        </nav>
+
+        <section id="description" class="tab-content">
+            <h2>Описание Велосипеда</h2>
+            <p>Само название этого байка указывает на его мощь и величие. Как и боевой корабль, способный противостоять любому шторму и противнику, BATTLESHIP – совершенное и не дающее осечки оружие, созданное для опытных специалистов технического «стрита», готовых к победам в уличных войнах. Его рама с верхней трубой длиной 20.75" и вилка с укороченным вылетом дропаутов выполнены полностью из CrMo 4130, что дает много простора и возможностей для вращений. Комплектация невероятна и представлена лучшими компонентами, которые WTP производит для райдеров, покупающих их отдельно, чтобы довести свой байк до совершенства. В зависимости от того, какой борт линкора вам удобнее подставить для скольжения по граням и перилам, BATTLESHIP выпускается в двух версиях. RSD означает традиционную, правостороннюю трансмиссию и драйвер, оборудованный фрикостером.</p>
+        </section>
+
+        <section id="gallery" class="tab-content">
+            <h2>Галерея Велосипеда</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="https://trial-sport.ru/images/catalog/wtp_my23_battleship_rsd_fc_abyss_blue_01_2848596.jpg" alt="Велосипед 1" class="slide">
+                    <img src="https://trial-sport.ru/images/catalog/wtp_my23_battleship_rsd_fc_abyss_blue_02_2848608.jpg" alt="Велосипед 2" class="slide">
+                    <img src="https://trial-sport.ru/images/catalog/wtp_my23_battleship_rsd_fc_abyss_blue_02_2848608.jpg" alt="Велосипед 3" class="slide">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="BMX.js"></script>
+</body>
+</html>

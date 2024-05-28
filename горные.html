@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горные Велосипеды</title>
+    <link rel="stylesheet" href="Горный велосипед.css">
+</head>
+<body>
+    <header>
+        <h1>Горный Велосипед Jamis DRAGON 29 </h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="Сайт по продаже велосипедов.html" onclick="showTab('description')">Главная</a></li>
+                <li><a href="#" onclick="showTab('description')">Описание</a></li>
+                <li><a href="#" onclick="showTab('gallery')">Галерея</a></li>
+            </ul>
+        </nav>
+
+        <section id="description" class="tab-content">
+            <h2>Описание Велосипеда</h2>
+            <p>Этот хардтейл знал всё о трейлах ещё задолго до миллениума. Способности Dragon к амортизации, добавляющей мягкости хода и наката, заложены в его стальную раму самой природой. Низкий вес и потрясающая надежность обусловлены благородством сплава Reynolds 520. Геометрия с «заваленной» рулевой трубой и колеса диаметром 29 дюймов соответствуют современным требованиям к трейлрайдингу. Обновившись, наш долгожитель снова занял место флагмана самого универсального и веселого вида катания.</p>
+            <p>Крепление колес на сквозных осях и готовность к установке регулируемого подседельного штыря с внутренней проводкой — ещё пара штрихов, подчеркивающих его мягкий и легкий ход в ногу со временем. Обладая современной комплектацией с 12-скоростной трансмиссией, 4-поршневыми дисковыми тормозами и вилкой с ходом 140 миллиметров, Dragon не просто преодолевает корни и камни, он летает по ним.</p>
+        </section>
+
+        <section id="gallery" class="tab-content">
+            <h2>Галерея Велосипеда</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="https://trial-sport.ru/images/catalog/21_dragon_gloss_black_2980323.jpg" alt="Велосипед 1" class="slide">
+                    <img src="https://trial-sport.ru/images/catalog/22_dragon_midnight_blue_2850486.jpg" alt="Велосипед 2" class="slide">
+                    <img src="https://trial-sport.ru/images/catalog/22_dragon_midnight_blue_f_2850488.jpg" alt="Велосипед 3" class="slide">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="Горный велосипед.js"></script>
+</body>
+</html>

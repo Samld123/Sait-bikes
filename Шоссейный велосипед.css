@@ -1,0 +1,106 @@
+/* Шоссейный велосипед.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+main {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+    .tab-content.active {
+        display: block;
+    }
+
+.bike-description, .bike-gallery {
+    margin-bottom: 20px;
+}
+
+    .bike-description h2, .bike-gallery h2 {
+        color: #333;
+    }
+
+    .bike-description p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+.slider {
+    position: relative;
+    max-width: 600px; /* Уменьшение ширины слайдера */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    max-height: 400px; /* Уменьшение высоты изображений */
+    object-fit: cover; /* Обеспечение четкости изображений */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
